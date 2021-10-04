@@ -18,3 +18,8 @@ $dbName = "m3gcindia";
 $baseUrl='https://mysalesberry.com/m3gcindia/';
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName );
+
+if ($conn -> connect_errno) {
+    echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+    exit();
+  }
